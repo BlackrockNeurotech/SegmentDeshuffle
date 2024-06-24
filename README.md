@@ -1,5 +1,5 @@
 # SegmentDeshuffle
-This repo is for distributing the source code and instructions for use of the the SegmentDeshuffle.exe and compilation instructions.
+This repo is for distributing the source code and instructions for use of the tool `SegmentDeshuffle.exe` and compilation instructions.
 
 # How does this bug present itself?
 The segment shuffle presents itself within continuous data files. The data packets in .nsx files will be packaged out of order for a ~30 samples for every ~30 minutes of recording in 30 kHz data, but this can vary. The data within the packets is valid. The timestamp in the packet header is also valid. However, if you analyze saved data without explicitly controlling the data index by the data timestamp and instead rely on the index on saved file, your analyses may be off.
